@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Stephanie Flora">             <!-- Author (basic name/content that must be added) -->
-    <meta name="description" content="Bootstrap template page">
+    <meta name="description" content="Parallax take-home">
 
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
@@ -21,31 +21,33 @@
     <title>MOBY Photo Gallery</title>
   </head>
   <body>
+    <!-- HEADER --------------------------------------------------------------------------------- -->
     <header class="container-fluid">
-      <!--  -->
       <nav class="navbar navbar-expand-lg bg_sf">
-        <a class="navbar-brand" href="#">MOBY</a>
+        <!-- <a class="navbar-brand" href="#">MOBY</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Parallax</a>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Parallax</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#location">MOBY map</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+                Photos
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#sunset">Honolulu Sunset</a>
+                <a class="dropdown-item" href="#harbour">Leaving Kaumalapau Harbour</a>
+                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" href="#repair">Controller Repair</a>
+                <a class="dropdown-item" href="#diver">MOBY diver</a>
+                <a class="dropdown-item" href="#shark">Diver and Shark</a>
               </div>
             </li>
           </ul>
@@ -56,51 +58,73 @@
         <h1 class="display-4 text-center">MOBY Photo Gallery</h1>
       </div>
     </header>
+    <!-- MAIN------------------------------------------------------------------------ -->
     <main class="container-fluid">
       <div class="row">
         <div class="col">
-          <div class="sf_parallax img1">
-            <div class="d-flex flex-row justify-content-start align-items-end">
+          <div class="sf_parallax img1" id="sunset">
+            <div class="d-flex flex-row justify-content-center align-items-end" id="sunset">
               <p class="caption display-4">
-                MOBY273 cruise on 10 July during the recovery efforts to return the M265 bouy to Honolulu after is broke loose from the mooring
+                MOBY cruise returning to Honolulu with MOBY in tow during sunset
               </p>  
+            </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <div class="sf_parallax img2">
-
+          <div class="sf_parallax img2" id="harbour">
+            <p class="caption display-4">
+               Leaving Kaumalapau Harbour with MOBY in tow to the site
+            </p> 
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <div class="sf_parallax img3">
-
+          <div class="sf_parallax img3" id="repair">
+            <p class="caption display-4">
+              Controller was reinstalled along with two surface float batteries
+            </p> 
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <div class="sf_parallax img4">
-
+          <div class="sf_parallax img4" id="diver">
+            <p class="caption display-4">
+               Diver at MOBY site 
+            </p> 
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <div class="sf_parallax img5">
-            
+          <div class="sf_parallax img5" id="shark">
+            <p class="caption display-4">
+               HRA divers and an oceanic white tip at the MOBY site
+            </p> 
           </div>
         </div>
       </div>
     </main>
-    <footer class="container-fluid">
+    <!-- FOOTER ---------------------------------------------------------------------------- -->
+    <footer class="container-fluid loc_ftr" id="location">
       <div class="row">
-        <div class="col">
-
+        <div class="col m-4 d-flex justify-content-center">
+          <img src="img/MOBYmap.jpg" alt="Map of MOBY location">
         </div>
+        <div class="col ml-4 d-flex justify-content-center align-items-start  flex-column">
+          <p >Moss Landing Marine Labs</p>
+          <p>Marine Optical Buoy Project</p>
+          <p>Stephanie Flora</p>
+         </div>
+         <div class="col ml-4 d-flex justify-content-start align-items-center  flex-row">
+          <img class="socialmedia" src="fonts/facebook-f-brands.svg" alt="Facebook">
+          <img class="socialmedia" src="fonts/hashtag-solid.svg" alt="hashtag">
+          <img class="socialmedia" src="fonts/twitter-brands.svg" alt="Twitter">            
+
+         </div>
       </div>
     </footer>
     <!-- Optional JavaScript -->

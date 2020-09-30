@@ -2,6 +2,8 @@
 :root {
     --sunsetpink:  #F08A74;
     --skyblue: #5D9BD7;
+    --sunsetorng: #FFCD7E;
+    --sharkfin: #44A5D8;
   }
 
 body{
@@ -11,7 +13,7 @@ body{
 }
 
 .bg_sf {
-    background-color: var(--skyblue);
+    background-color: var(--sunsetorng);
     color: #000;
 }
 
@@ -31,15 +33,16 @@ body{
     background-size: cover;  
 }
 
-/* .caption {
+.caption {
     position: absolute;
-    left: 0;
+    left: 15%;
     top: 50%;
-    width: 100%;
+    width: 65%;
     text-align: center;
     color: #000;
-    background-color: var(--skyblue);
-  } */
+    background-color: #ddd;
+    opacity: 0.4;
+  }
 
 .img1 {
     background-image: url('../img/sm_20180710_M265@sunset_GoPro_18.JPG');
@@ -58,13 +61,23 @@ body{
 
 .img4 {
     background-image: url('../img/sm_MOBY_L274_GOPR0197.jpg');
-    min-height: 560px;
+    min-height: 600px;
 }
 
 .img5 {
     background-image: url('../img/sm_Kai_sharkweb.jpg');
     min-height: 900px;    
 }
+
+.loc_ftr {
+  background-color: var(--sharkfin);
+}
+
+.socialmedia {
+    height: 5vh;
+    padding: 1vh;
+}
+
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
