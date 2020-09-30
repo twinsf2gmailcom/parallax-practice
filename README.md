@@ -17,7 +17,6 @@ This is was started during mobile friendly website class day 7.  I used my boots
 ### Bootstrap Starter Template
 [Template website link](https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template)
 
-Using Aramayis Orkusyan recompiled Bootstrap with a flag set that enables responsive font sizes. 
-**We recommend using BootStrab 4.5.2**
+**Using Aramayis Orkusyan recompiled Bootstrap with a flag set that enables responsive font sizes (ver BootStrab 4.5.2)**
 
 ### By Stephanie F.
