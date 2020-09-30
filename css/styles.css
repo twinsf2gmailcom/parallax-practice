@@ -1,9 +1,87 @@
 /* font-family: 'Lobster', cursive; */
+:root {
+    --sunsetpink:  #F08A74;
+    --skyblue: #5D9BD7;
+    --sunsetorng: #FFCD7E;
+    --sharkfin: #44A5D8;
+  }
 
 body{
     font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.bg_sf {
+    background-color: var(--sunsetorng);
+    color: #000;
+}
+
+.navbar a {
+    color: #000;   
 }
 
 .jumboclass {
-    background-color: aquamarine;
+    background-color: var(--sunsetpink);
 }
+
+.sf_parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.caption {
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    width: 65%;
+    text-align: center;
+    color: #000;
+    background-color: #ddd;
+    opacity: 0.4;
+  }
+
+.img1 {
+    background-image: url('../img/sm_20180710_M265@sunset_GoPro_18.JPG');
+    min-height: 830px;
+}
+
+.img2 {
+    background-image: url('../img/sm_IMG_1047.jpg');
+    min-height: 1025px;   
+}
+
+.img3 {
+    background-image: url('../img/sm2_L244_16.jpg');
+    min-height: 1300px;
+}
+
+.img4 {
+    background-image: url('../img/sm_MOBY_L274_GOPR0197.jpg');
+    min-height: 600px;
+}
+
+.img5 {
+    background-image: url('../img/sm_Kai_sharkweb.jpg');
+    min-height: 900px;    
+}
+
+.loc_ftr {
+  background-color: var(--sharkfin);
+}
+
+.socialmedia {
+    height: 5vh;
+    padding: 1vh;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .img1, .img2, .img3, .img4, .img5 {
+      background-attachment: scroll;
+    }
+  }
