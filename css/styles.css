@@ -44,6 +44,23 @@ body{
     opacity: 0.4;
   }
 
+  .img1 .caption {
+    top: 10%;
+  }
+
+  .img4 .caption {
+    left: 0%;
+    top: 10%;
+    width: 40%;
+  }
+
+  .img5 .caption {
+    left: 5%;
+    bottom: 5%;
+    height: 25%;
+    width: 30%;
+  }
+
 .img1 {
     background-image: url('../img/sm_20180710_M265@sunset_GoPro_18.JPG');
     min-height: 830px;
