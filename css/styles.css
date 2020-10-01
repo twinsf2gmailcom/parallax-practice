@@ -46,6 +46,8 @@ body{
 
   .img1 .caption {
     top: 10%;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-x */
+    /* background-position-x: center; */
   }
 
   .img4 .caption {
